@@ -1,0 +1,38 @@
+@import "vuetify/styles";
+
+:root {
+  --primary: #0d0d0d;
+  --secondary: #f95801;
+  --accent: #756c6c;
+  --background: #fff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.v-application {
+  background: var(--background) !important;
+}
+
+.v-card {
+  border-radius: 10px;
+}
+
+/* Custom global utility classes */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px #0001;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-primary { color: var(--primary) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.text-accent { color: var(--accent) !important; }
+.bg-primary { background: var(--primary) !important; }
+.bg-secondary { background: var(--secondary) !important; }
