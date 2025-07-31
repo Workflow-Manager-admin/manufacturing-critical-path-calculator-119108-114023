@@ -1,0 +1,4 @@
+{
+    "command": "npm run dev -- -p <port> -H <host>",
+    "working_directory": "/home/kavia/workspace/code-generation/manufacturing-critical-path-calculator-119108-114023/frontend_client"
+}
