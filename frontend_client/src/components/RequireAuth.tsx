@@ -1,16 +1,17 @@
 "use client";
-import { useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
-export default function Home() {
+// PUBLIC_INTERFACE
+export default function RequireAuth({ children }: { children: React.ReactNode }) {
   const { token } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
     if (!token) router.replace("/login");
-    else router.replace("/dashboard");
   }, [token, router]);
 
-  return null;
+  if (!token) return null; // prevent FOUC
+  return <>{children}</>;
 }
