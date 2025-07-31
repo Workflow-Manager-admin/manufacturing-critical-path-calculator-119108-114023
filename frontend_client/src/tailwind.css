@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0d0d0d;
+  --color-secondary: #f95801;
+  --color-accent: #756c6c;
+  --background: #fff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.card {
+  @apply bg-white rounded shadow-md;
+}
